@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |gem|
   gem.name          = "hiera-eyaml-kms"
-  gem.version       = "0.3"
+  gem.version       = "0.4"
   gem.description   = "AWS KMS encryptor for use with hiera-eyaml"
   gem.summary       = "Encryption plugin for hiera-eyaml backend for Hiera"
   gem.author        = "Allan Denot"
@@ -15,4 +15,5 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
 
   gem.add_runtime_dependency 'aws-sdk-kms'
+  gem.add_runtime_dependency 'aws-sdk-secretsmanager'
 end
